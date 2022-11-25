@@ -2,24 +2,24 @@
   <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action " aria-current="true">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">WhatsApp</h5>
-        <small>3 days ago</small>
+        <h5 class="mb-1">{{ notifications[0].title }}</h5>
+        <small>{{ notifications[0].date }}</small>
       </div>
-      <p class="mb-1">Fulano mandou mensagem!</p>
+      <p class="mb-1">{{ notifications[0].subtitle }}</p>
     </a>
     <a href="#" class="list-group-item list-group-item-action">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Instagram</h5>
-        <small class="text-muted">3 days ago</small>
+        <h5 class="mb-1">{{ notifications[1].title }}</h5>
+        <small class="text-muted">{{ notifications[1].date }}</small>
       </div>
-      <p class="mb-1">Ciclano começou a te seguir!</p>
+      <p class="mb-1">{{ notifications[1].subtitle }}</p>
     </a>
     <a href="#" class="list-group-item list-group-item-action">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Instagram</h5>
-        <small class="text-muted">3 days ago</small>
+        <h5 class="mb-1">{{ notifications[2].title }}</h5>
+        <small class="text-muted">{{ notifications[2].date }}</small>
       </div>
-      <p class="mb-1">Beltrano iniciou um vídeo ao vivo.</p>
+      <p class="mb-1">{{ notifications[2].subtitle }}</p>
     </a>
   </div>
 </div>
