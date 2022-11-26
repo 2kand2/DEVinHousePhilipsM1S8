@@ -1,11 +1,18 @@
 <div class="container">
-  <div class="list-group">
-    <a *ngFor="let notification of notifications" href="#" class="list-group-item list-group-item-action " aria-current="true">
+  <div class="list-group w-75 p-3">
+    <div *ngFor="let notification of notifications, let i = index"  href="#" class="list-group-item w-100 p-3 " aria-current="true">
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1">{{ notification.title }}</h5>
         <small>{{ notification.date }}</small>
       </div>
-      <p class="mb-1">{{ notification.subtitle }}</p>
-    </a>
+      <div class="d-flex w-100 justify-content-between">
+        <p class="mb-1">{{ notification.subtitle }}</p>
+        <button (click)="readNotification(i)" 
+        [ngClass]="{'btn-success': notification.read == true}"
+        type="button"
+        class="btn">{{ notification.read? "Lido": "Visualizar" }}
+        </button>
+      </div>
+    </div>
   </div>
 </div>

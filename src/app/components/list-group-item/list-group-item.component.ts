@@ -11,4 +11,12 @@ export class ListGroupItemComponent {
 
   notifications: notification[] = NOTIFICATIONS
 
+  readNotification(index: number) {
+    this.notifications[index].read = true;
+    console.log(this.notifications[index]);
+  }
+
+
+
+
 }
